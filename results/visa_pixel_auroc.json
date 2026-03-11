@@ -1,0 +1,32 @@
+{
+  "image": {
+    "candle": 84.23,
+    "capsules": 84.74,
+    "cashew": 86.55,
+    "chewinggum": 95.48,
+    "fryum": 87.07,
+    "macaroni1": 64.47,
+    "macaroni2": 52.61,
+    "pcb1": 90.67,
+    "pcb2": 78.59,
+    "pcb3": 78.06,
+    "pcb4": 92.77,
+    "pipe_fryum": 85.03,
+    "mean": 81.69
+  },
+  "pixel": {
+    "candle": 95.76,
+    "capsules": 95.14,
+    "cashew": 98.43,
+    "chewinggum": 98.36,
+    "fryum": 84.04,
+    "macaroni1": 81.51,
+    "macaroni2": 89.21,
+    "pcb1": 95.45,
+    "pcb2": 86.23,
+    "pcb3": 89.4,
+    "pcb4": 90.99,
+    "pipe_fryum": 98.46,
+    "mean": 91.92
+  }
+}
