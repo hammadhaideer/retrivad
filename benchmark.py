@@ -54,7 +54,7 @@ def run_category(category, train_dir, test_normal_dir, test_anomaly_dirs,
                  max_ref=69, k=1, device="cpu"):
     normal_paths = image_files(train_dir)
     if not normal_paths:
-        print(f"  [skip] no train normals: {train_dir}")
+        print(f"  Skipping {train_dir}: no training images found")
         return None
 
     model = RetriVAD(k=k, device=device)
@@ -73,7 +73,7 @@ def run_category(category, train_dir, test_normal_dir, test_anomaly_dirs,
     elapsed = time.time() - t0
 
     if len(np.unique(labels)) < 2:
-        print(f"  [skip] {category}: need both classes")
+        print(f"  Skipping {category}: requires both normal and anomaly samples")
         return None
 
     auc = roc_auc_score(labels, scores)
@@ -124,7 +124,7 @@ def run_visa(data_root, max_ref=69, k=1, device="cpu"):
 
         normal_paths = image_files(normal_dir)
         if not normal_paths:
-            print(f"  [skip] {cat}: no normals")
+            print(f"  Skipping {cat}: no normal images found")
             continue
 
         split       = max(1, int(len(normal_paths) * 0.8))
@@ -189,7 +189,7 @@ def print_comparison(all_results):
         gap_str  = f"{mean_auc - univad:+.1f}%" if univad else "  n/a"
         uni_str  = f"{univad:.1f}" if univad else " n/a"
         flag     = "✓" if (univad and mean_auc >= univad) else "✗ gap"
-        print(f"  {ds:<16} {uni_str:>8} {mean_auc:>9.1f}% {gap_str:>7}  {flag}")
+        print(f"  {ds:<16} {uni_str:>8} {mean_auc:>9.1f}% {gap_str:>7}  ")
     print("=" * 75)
 
 
