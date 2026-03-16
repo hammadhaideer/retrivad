@@ -9,6 +9,5 @@
   },
   "n_test_per_category": 20,
   "device": "cpu",
-  "machine": "Intel Core i7 dual-core CPU-only",
-  "note": "Measured 16 March 2026"
+  "machine": "Intel Core i7, CPU-only, no GPU"
 }

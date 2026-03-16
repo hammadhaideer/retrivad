@@ -27,10 +27,5 @@
   },
   "visa_pixel": {
     "mean": 91.92
-  },
-  "univad_pixel": {
-    "mvtec": 96.5,
-    "visa": 98.2,
-    "loco": 75.1
   }
 }
