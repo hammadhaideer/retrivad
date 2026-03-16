@@ -7,7 +7,6 @@ from sklearn.metrics import roc_auc_score
 sys.path.insert(0, str(Path(__file__).parent))
 from models.retrivad import RetriVAD
 
-UNIVAD = 80.2
 
 
 def image_files(folder):
@@ -54,8 +53,7 @@ def main():
     auc = roc_auc_score(labels, scores) * 100
     print(f"\nN={labels.count(0)}  A={labels.count(1)}")
     print(f"BrainMRI img-AUC = {auc:.2f}%")
-    print(f"UniVAD           = {UNIVAD}%")
-    print(f"Gap              = {auc - UNIVAD:+.2f}%")
+
 
 
 if __name__ == "__main__":
