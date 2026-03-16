@@ -161,7 +161,7 @@ def main():
     out = Path('results') / 'visa_pixel_auroc.json'
     out.parent.mkdir(exist_ok=True)
     with open(out, 'w') as f:
-        json.dump({'image': img_res, 'pixel': pix_res}, f, indent=2)
+        json.dump({'pixel': pix_res}, f, indent=2)
     print(f"Saved to {out}")
 
 if __name__ == '__main__':
