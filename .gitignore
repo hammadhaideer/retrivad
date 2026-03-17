@@ -15,4 +15,4 @@ results/*.csv
 !results/image_auroc_results.json 
 !results/pixel_auroc_final.json 
 !results/visa_pixel_auroc.json 
-!results/retrivad_latency_confirmed.json
+!results/latency_results.json

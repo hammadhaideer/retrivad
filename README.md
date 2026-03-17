@@ -197,7 +197,7 @@ Output is saved to `figures/fig_qualitative.png`.
 | `results/image_auroc_results.json` | Image-level AUROC across all 7 datasets |
 | `results/pixel_auroc_final.json` | Pixel-level AUROC for MVTec-AD and MVTec LOCO |
 | `results/visa_pixel_auroc.json` | Pixel-level AUROC for VisA (12 categories) |
-| `results/retrivad_latency_confirmed.json` | Per-image latency measured on CPU |
+| `results/latency_results.json` | Per-image latency measured on CPU |
 
 ---
 
