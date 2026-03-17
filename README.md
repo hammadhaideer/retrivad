@@ -142,7 +142,7 @@ data/mvtec_loco/
 ### Image-Level Evaluation
 
 ```bash
-python benchmark.py
+python benchmark.py --dataset all --data_root /path/to/datasets
 ```
 
 Runtime: approximately 30–60 minutes on CPU.
@@ -194,7 +194,7 @@ Output is saved to `figures/fig_qualitative.png`.
 
 | File | Contents |
 |------|----------|
-| `results/confirmed_results_10mar2026.json` | Image-level AUROC across all 7 datasets |
+| `results/image_auroc_results.json` | Image-level AUROC across all 7 datasets |
 | `results/pixel_auroc_final.json` | Pixel-level AUROC for MVTec-AD and MVTec LOCO |
 | `results/visa_pixel_auroc.json` | Pixel-level AUROC for VisA (12 categories) |
 | `results/retrivad_latency_confirmed.json` | Per-image latency measured on CPU |

@@ -12,7 +12,7 @@ datasets/
 results/*.json 
 results/*.csv 
 !results/.gitkeep 
-!results/confirmed_results_10mar2026.json 
+!results/image_auroc_results.json 
 !results/pixel_auroc_final.json 
 !results/visa_pixel_auroc.json 
 !results/retrivad_latency_confirmed.json
