@@ -1,9 +1,0 @@
-{
-  "MVTec_LOCO": 72.1,
-  "MVTec_AD": 89.6,
-  "VisA": 79.1,
-  "RESC": 76.53,
-  "BrainMRI": 95.25,
-  "ChestXray": 86.79,
-  "mean": 83.22
-}
